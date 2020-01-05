@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Sensirion)(type Legacy)(uri ${KIPRJMOD}/Sensirion.lib)(options "")(descr ""))
+  (lib (name Adafruit)(type Legacy)(uri ${KIPRJMOD}/Adafruit.lib)(options "")(descr ""))
+)

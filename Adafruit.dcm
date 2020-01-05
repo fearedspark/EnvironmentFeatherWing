@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FeatherWing
+F https://learn.adafruit.com/adafruit-feather/feather-specification
+$ENDCMP
+#
+#End Doc Library

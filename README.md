@@ -9,6 +9,7 @@ This is also my first KiCad project.
 
 - T/RH Sensor: SHT31-DIS-F ([Datasheet](https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/0_Datasheets/Humidity/Sensirion_Humidity_Sensors_SHT3x_Datasheet_digital.pdf))
 - VOC/eCO2 Sensor: SGP30 ([Datasheet](https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/0_Datasheets/Gas/Sensirion_Gas_Sensors_SGP30_Datasheet.pdf))
+- 1.8V LDO Regulator: MCP1754S-1802E/CB ([Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/20002276C.pdf))
 
 ## Power Supply
 
