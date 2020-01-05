@@ -41,7 +41,6 @@ Wire Wire Line
 Connection ~ 6200 4450
 Wire Wire Line
 	6200 4550 6200 4450
-Connection ~ 6600 4450
 Wire Wire Line
 	6600 4450 6200 4450
 Wire Wire Line
@@ -52,12 +51,6 @@ Text Label 7450 4450 0    50   ~ 0
 SCL_LV
 Wire Wire Line
 	6600 4550 6600 4450
-Wire Wire Line
-	6600 4850 6600 4750
-Connection ~ 6600 4850
-Connection ~ 6600 4950
-Wire Wire Line
-	6600 4950 6600 4850
 $Comp
 L Device:C C6
 U 1 1 5E1957B9
@@ -358,61 +351,6 @@ F 3 "" H 3100 5550 50  0001 C CNN
 	1    3100 5550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Adafruit:FeatherWing J1
-U 3 1 5E126098
-P 2900 5500
-F 0 "J1" H 2992 5725 50  0000 C CNN
-F 1 "FeatherWing" H 2992 5634 50  0000 C CNN
-F 2 "Adafruit:FeatherWing" H 3300 3800 50  0001 C CNN
-F 3 "https://learn.adafruit.com/adafruit-feather/feather-specification" H 2900 5600 50  0001 C CNN
-	3    2900 5500
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Adafruit:FeatherWing J1
-U 2 1 5E12557C
-P 2900 4000
-F 0 "J1" H 3042 4225 50  0000 C CNN
-F 1 "FeatherWing" H 3042 4134 50  0000 C CNN
-F 2 "Adafruit:FeatherWing" H 3300 2300 50  0001 C CNN
-F 3 "https://learn.adafruit.com/adafruit-feather/feather-specification" H 2900 4100 50  0001 C CNN
-	2    2900 4000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Adafruit:FeatherWing J1
-U 1 1 5E124B1C
-P 2900 2000
-F 0 "J1" H 3017 2225 50  0000 C CNN
-F 1 "FeatherWing" H 3017 2134 50  0000 C CNN
-F 2 "Adafruit:FeatherWing" H 3300 300 50  0001 C CNN
-F 3 "https://learn.adafruit.com/adafruit-feather/feather-specification" H 2900 2100 50  0001 C CNN
-	1    2900 2000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Sensirion:SHT31-D U1
-U 1 1 5E114A20
-P 6050 2300
-F 0 "U1" H 6050 2765 50  0000 C CNN
-F 1 "SHT31-D" H 6050 2674 50  0000 C CNN
-F 2 "Sensirion:DFN-8-2.5x2.5x0.9" H 6050 1750 50  0001 C CNN
-F 3 "https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/0_Datasheets/Humidity/Sensirion_Humidity_Sensors_SHT3x_Datasheet_digital.pdf" H 6050 1600 50  0001 C CNN
-	1    6050 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Sensirion:SGP30 U3
-U 1 1 5E114452
-P 7000 4700
-F 0 "U3" H 7000 5215 50  0000 C CNN
-F 1 "SGP30" H 7000 5124 50  0000 C CNN
-F 2 "Sensirion:DFN-6-2.45x2.45x0.9" H 7000 4150 50  0001 C CNN
-F 3 "https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/0_Datasheets/Gas/Sensirion_Gas_Sensors_SGP30_Datasheet.pdf" H 7000 4750 50  0001 C CNN
-	1    7000 4700
-	1    0    0    -1  
-$EndComp
 Text Notes 7380 7250 0    50   ~ 0
 1
 $Comp
@@ -571,4 +509,66 @@ F 3 "" H 4150 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4150 4450
+Wire Wire Line
+	6600 4750 6600 4850
+$Comp
+L Sensirion:SGP30 U3
+U 1 1 5E135313
+P 7000 4700
+F 0 "U3" H 7000 5215 50  0000 C CNN
+F 1 "SGP30" H 7000 5124 50  0000 C CNN
+F 2 "Sensirion:DFN-6-2.45x2.45x0.9" H 7000 4150 50  0001 C CNN
+F 3 "https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/0_Datasheets/Gas/Sensirion_Gas_Sensors_SGP30_Datasheet.pdf" H 7000 4750 50  0001 C CNN
+	1    7000 4700
+	1    0    0    -1  
+$EndComp
+Connection ~ 6600 4450
+$Comp
+L Sensirion:SHT31-D U1
+U 1 1 5E1369C8
+P 6050 2300
+F 0 "U1" H 6050 2765 50  0000 C CNN
+F 1 "SHT31-D" H 6050 2674 50  0000 C CNN
+F 2 "Sensirion:DFN-8-2.5x2.5x0.9" H 6050 1750 50  0001 C CNN
+F 3 "https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/0_Datasheets/Humidity/Sensirion_Humidity_Sensors_SHT3x_Datasheet_digital.pdf" H 6050 1600 50  0001 C CNN
+	1    6050 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Adafruit:FeatherWing J1
+U 1 1 5E13B7B7
+P 2900 2000
+F 0 "J1" H 3017 2225 50  0000 C CNN
+F 1 "FeatherWing" H 3017 2134 50  0000 C CNN
+F 2 "Adafruit:FeatherWing" H 3300 300 50  0001 C CNN
+F 3 "https://learn.adafruit.com/adafruit-feather/feather-specification" H 2900 2100 50  0001 C CNN
+	1    2900 2000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Adafruit:FeatherWing J1
+U 2 1 5E14558F
+P 2900 4000
+F 0 "J1" H 3042 4225 50  0000 C CNN
+F 1 "FeatherWing" H 3042 4134 50  0000 C CNN
+F 2 "Adafruit:FeatherWing" H 3300 2300 50  0001 C CNN
+F 3 "https://learn.adafruit.com/adafruit-feather/feather-specification" H 2900 4100 50  0001 C CNN
+	2    2900 4000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Adafruit:FeatherWing J1
+U 3 1 5E146D56
+P 2900 5500
+F 0 "J1" H 2992 5725 50  0000 C CNN
+F 1 "FeatherWing" H 2992 5634 50  0000 C CNN
+F 2 "Adafruit:FeatherWing" H 3300 3800 50  0001 C CNN
+F 3 "https://learn.adafruit.com/adafruit-feather/feather-specification" H 2900 5600 50  0001 C CNN
+	3    2900 5500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4850 6600 4950
+Connection ~ 6600 4850
+Connection ~ 6600 4950
 $EndSCHEMATC
